@@ -1,0 +1,70 @@
+{
+  "description": "Cross-provider model name mappings for local-gateway.",
+  "version": "1",
+  "mappings": [
+    {
+      "model": "deepseek-chat",
+      "from_provider": "deepseek",
+      "to_provider": "kimi",
+      "mapped_name": "moonshot-v1-128k",
+      "notes": "KIMI's chat model, roughly equivalent to DeepSeek's general chat"
+    },
+    {
+      "model": "deepseek-chat",
+      "from_provider": "deepseek",
+      "to_provider": "openai",
+      "mapped_name": "gpt-4o",
+      "notes": "OpenAI's most capable model"
+    },
+    {
+      "model": "deepseek-chat",
+      "from_provider": "deepseek",
+      "to_provider": "openrouter",
+      "mapped_name": "deepseek/deepseek-chat",
+      "notes": "OpenRouter uses provider/model format"
+    },
+    {
+      "model": "deepseek-chat",
+      "from_provider": "deepseek",
+      "to_provider": "groq",
+      "mapped_name": "llama-3.3-70b-versatile",
+      "notes": "Groq's closest general-purpose model"
+    },
+    {
+      "model": "gpt-4o",
+      "from_provider": "openai",
+      "to_provider": "deepseek",
+      "mapped_name": "deepseek-chat",
+      "notes": "DeepSeek's general chat model"
+    },
+    {
+      "model": "gpt-4o",
+      "from_provider": "openai",
+      "to_provider": "kimi",
+      "mapped_name": "moonshot-v1-128k",
+      "notes": "KIMI's most capable model"
+    },
+    {
+      "model": "gpt-4o",
+      "from_provider": "openai",
+      "to_provider": "openrouter",
+      "mapped_name": "openai/gpt-4o",
+      "notes": "OpenRouter uses provider/model format"
+    },
+    {
+      "model": "claude-sonnet-4-20250514",
+      "from_provider": "anthropic",
+      "to_provider": "openai",
+      "mapped_name": "gpt-4o",
+      "notes": "Approximate: no exact equivalent exists"
+    },
+    {
+      "model": "claude-sonnet-4-20250514",
+      "from_provider": "anthropic",
+      "to_provider": "deepseek",
+      "mapped_name": "deepseek-chat",
+      "notes": "Approximate: no exact equivalent exists"
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/correctover/local-gateway/main/models.schema.json"
+}

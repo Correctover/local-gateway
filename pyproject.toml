@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling>=1.18"]
+build-backend = "hatchling.build"
+
+[project]
+name = "local-gateway"
+version = "0.1.1"
+description = "Desktop LLM gateway with multi-provider failover and model name mapping"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.9"
+keywords = ["llm", "gateway", "proxy", "failover", "openai", "deepseek", "kimi"]
+authors = [
+  { name = "Correctover", email = "team@correctover.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/correctover/local-gateway"
+Source = "https://github.com/correctover/local-gateway"
+BugTracker = "https://github.com/correctover/local-gateway/issues"
+
+[project.scripts]
+local-gateway = "local_gateway.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/local_gateway"]
+
+[tool.hatch.build.targets.sdist]
+include = ["/src", "/README.md", "/LICENSE", "/CHANGELOG.md", "/models.json"]

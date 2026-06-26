@@ -1,0 +1,10 @@
+*.pyc
+__pycache__/
+dist/
+*.egg-info/
+node_modules/
+.env
+.venv/
+gh-cli/
+*.msi
+*.zip

@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Model Mapping Schema",
+  "type": "object",
+  "required": ["mappings"],
+  "properties": {
+    "version": { "type": "string", "description": "Schema version" },
+    "mappings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["model", "from_provider", "to_provider", "mapped_name"],
+        "properties": {
+          "model": { "type": "string", "description": "Original model name" },
+          "from_provider": { "type": "string", "description": "Provider of the original model" },
+          "to_provider": { "type": "string", "description": "Target provider for the mapped name" },
+          "mapped_name": { "type": "string", "description": "Equivalent model name on the target provider" },
+          "notes": { "type": "string", "description": "Notes on mapping quality or equivalence" }
+        }
+      }
+    }
+  }
+}

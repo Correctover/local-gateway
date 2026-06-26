@@ -1,0 +1,29 @@
+{
+  "name": "local-gateway",
+  "version": "1.0.0",
+  "description": "Desktop LLM gateway with multi-provider failover and automatic model name mapping. Zero dependencies.",
+  "main": "src/local-gateway.js",
+  "bin": {
+    "local-gateway": "src/local-gateway.js"
+  },
+  "keywords": ["llm", "gateway", "proxy", "failover", "openai", "deepseek", "kimi", "desktop"],
+  "author": "Correctover <team@correctover.com>",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/correctover/local-gateway.git"
+  },
+  "bugs": {
+    "url": "https://github.com/correctover/local-gateway/issues"
+  },
+  "homepage": "https://github.com/correctover/local-gateway",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "src/local-gateway.js",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ]
+}
