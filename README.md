@@ -103,6 +103,13 @@ See `local-gateway --list-providers` for the full list.
 
 See `local-gateway --list-models` for the current mapping table.
 
+## Related Projects
+
+| Project | What it does |
+|---------|-------------|
+| [NeuralBridge](https://github.com/Correctover/neuralbridge-sdk) | Self-healing engine for LLM APIs — 87 rules, MAPE-K loop, contract validation |
+| [Correctover](https://github.com/Correctover/Correctover-) | Enterprise AI reliability SDK — full 6-dimension verification + failover |
+
 ## License
 
 Apache 2.0
