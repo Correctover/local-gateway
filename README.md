@@ -2,6 +2,12 @@
 
 **Desktop LLM gateway with multi-provider failover and automatic model name mapping.**
 
+> 💙 **Support LocalGateway**
+> If this saved you from an API outage, consider [sponsoring us](https://github.com/sponsors/Correctover).
+> - ☕ **$5/month** — Thanks + priority issue responses
+> - 🚀 **$29/month** — Private Discord + monthly update briefings
+> - 🏢 **$99/month** — Enterprise sponsor, logo on README
+
 ```
 pip install local-gateway
 ```
@@ -102,6 +108,15 @@ See `local-gateway --list-providers` for the full list.
 ## Cross-Provider Model Mappings
 
 See `local-gateway --list-models` for the current mapping table.
+
+## Need Help Integrating?
+
+Need help deploying LocalGateway for your team, or integrating it into your existing infrastructure?
+
+📅 [Book a 30-min consultation](mailto:wanggui.gui@neuralbridge.cn?subject=LocalGateway%20Integration%20Support)
+
+- **$200/hour** — Architecture review & integration guidance
+- **$500/engagement** — Full deployment + configuration for your team
 
 ## Related Projects
 
