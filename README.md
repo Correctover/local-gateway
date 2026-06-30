@@ -159,7 +159,7 @@ response = client.chat.completions.create(
 
 ## License
 
-Apache 2.0
+Proprietary Commercial License
 
 ---
 
